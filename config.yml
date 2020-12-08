@@ -1,0 +1,16 @@
+title: csshtml
+description: 'casscoding html programing languages '
+template:
+  repo: csshtml-template
+  name: csshtml
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
